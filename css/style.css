@@ -8,7 +8,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #fff;
+    color: #080101;
     background-color: #111;
   }
   
@@ -21,99 +21,97 @@
     z-index: 1000;
   }
 
-  #logozac {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: #e63946;
-  }
-  
-  .nav-links a.active::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #e63946;
+  .navbar-nav {
     width: 100%;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaciado entre elementos */
   }
   
-  
+
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #e63946;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+body {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e63946 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+
 
 
 /* Sección de Inicio */
 #inicio_fondo {
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center; /* Centrado vertical */
-  height: 100vh; /* Ocupa toda la altura de la ventana */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
   background-image: url('/imagenes/fondos/Componentes.jpg');
   background-size: 150%;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; /* Necesario para elementos absolutos */
+  position: relative; 
   overflow: hidden;
 }
 
-/* Contenedor de texto */
+
 .initext {
-  text-align: center; /* Centra el texto dentro del contenedor */
+  text-align: center; 
   color: #fff;
-  max-width: 700px; /* Limita el ancho del contenido */
-  padding: 2rem; /* Espaciado interno */
-  background: rgba(0, 0, 0, 0.6); /* Fondo negro más translúcido */
-  border-radius: 20px; /* Bordes suaves */
-  backdrop-filter: blur(10px); /* Desenfoque del fondo */
-  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4); /* Sombra profesional más difusa */
-  font-family: 'Roboto', sans-serif; /* Fuente profesional */
+  max-width: 700px; 
+  padding: 2rem; 
+  background: rgba(0, 0, 0, 0.6); 
+  border-radius: 20px; 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4); /* Sombra*/
+  font-family: 'Roboto', sans-serif; 
 }
 
 /* Título */
 .initext h1 {
-  font-size: 2.5rem; /* Título destacado */
+  font-size: 2.5rem; 
   font-weight: bold;
   margin-bottom: 1rem;
-  letter-spacing: 1px; /* Espaciado entre letras */
-  color: #e63946; /* Tono rojo profesional */
+  letter-spacing: 1px;
+  color: #e63946; 
 }
 
 /* Párrafo */
 .initext p {
   font-size: 1.1rem;
-  line-height: 1.8; /* Mejora la legibilidad */
-  color: #ddd; /* Color ligeramente gris para contraste */
-  margin-bottom: 0; /* Elimina el margen inferior */
+  line-height: 1.8; 
+  color: #ddd; 
+  margin-bottom: 0; 
 }
 
 
